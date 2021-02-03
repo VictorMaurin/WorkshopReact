@@ -7,7 +7,7 @@ const TodoItem = ({ todo, removeTodo, index}) => {
     <div className="todo">
       {todo}
       <Button
-        onClick={removeTodo}
+        onClick={() => removeTodo(index)}
         variant="contained"
         color="secondary"
       >
